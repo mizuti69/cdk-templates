@@ -1,0 +1,11 @@
+version: "3"
+services: 
+  study: 
+    container_name: study
+    build:
+      context: ./
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    volumes: 
+      - ../project-study:/app
