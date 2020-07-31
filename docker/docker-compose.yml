@@ -1,7 +1,7 @@
 version: "3"
 services: 
-  study: 
-    container_name: study
+  aws-cdk: 
+    container_name: aws-cdk
     build:
       context: ./
     tty: true
