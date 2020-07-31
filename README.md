@@ -33,6 +33,7 @@ bash-5.0#
 Update aws-cdk if necessary  
 
 ```
+# npm install
 # npm update -g aws-cdk
 # npm update
 ```
@@ -90,4 +91,22 @@ AWS integration
 
 ```
 # cdk bootstrap 
+```
+
+### Environment
+
+* 
+* `# cdk --context key=value`
+* cdk.context.json <= import as code from managed aws
+* cdk.json
+* .cdk.json
+
+```
+# cdk context
+```
+
+get context parameter  
+
+```
+this.node.tryGetcontext("ENV_NAME")
 ```

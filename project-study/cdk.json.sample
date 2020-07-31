@@ -1,0 +1,26 @@
+{
+  "app": "npx ts-node bin/project-study.ts",
+  "context": {
+    "@aws-cdk/core:enableStackNameDuplicates": "true",
+    "aws-cdk:enableDiffNoFail": "true",
+    "projectName" : "ProjectName",
+    "projectDnsName": "project-name",
+    "dev": {
+      "acmCertArn": "arn:aws:acm:ap-northeast-1:000000000:certificate/*****************",
+      "vpcId": "vpc-*******",
+      "vpcCidr": "10.20.0.0/16",
+      "vpcSub1Id": "subnet-*****",
+      "vpcSub1Az": "ap-northeast-1c",
+      "vpcSub1Rt": "rtb-******",
+      "vpcSub2Id": "subnet-******",
+      "vpcSub2Az": "ap-northeast-1a",
+      "vpcSub2Rt": "rtb-*****",
+      "ec2KeyPair": "KEY_PAIR",
+      "ec2InstanceType": "t3.small",
+      "ec2EbsSize": 50,
+      "elbInternet": "false",
+      "elbTargetPort": 8080,
+      "elbTargetHealthPort": "8080"
+    }
+  }
+}
